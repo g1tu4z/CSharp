@@ -1,0 +1,26 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextCombBoxUserControl"
+        xmlns:MyControl="clr-namespace:TextCombBoxUserControl.MyControl"
+        x:Class="TextCombBoxUserControl.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Window.DataContext>
+        <local:ViewModel x:Name="vm"/>
+    </Window.DataContext>
+    
+    
+    <Grid Background="Gray">
+        <MyControl:TextCombBox HorizontalAlignment="Left" Height="45" Margin="175,159,0,0" VerticalAlignment="Top" Width="139" IsFlg="True" Item="{Binding Data}"/>
+        <MyControl:TextCombBox HorizontalAlignment="Left" Height="45" Margin="345,159,0,0" VerticalAlignment="Top" Width="139" IsFlg="False" Item="{Binding Data2}"/>
+
+        <Label Content="{Binding Data.de}" HorizontalAlignment="Left" Margin="175,227,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding Data.m}" HorizontalAlignment="Left" Margin="225,227,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding Data.di}" HorizontalAlignment="Left" Margin="271,227,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="175,273,0,0" Click="Button_Click"/>
+    </Grid>
+</Window>

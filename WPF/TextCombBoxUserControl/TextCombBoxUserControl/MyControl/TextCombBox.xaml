@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="TextCombBoxUserControl.MyControl.TextCombBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TextCombBoxUserControl.MyControl"
+             xmlns:root="clr-namespace:TextCombBoxUserControl"
+             mc:Ignorable="d" Height="44.858" Width="139">
+
+    <Grid Background="Black">
+        <TextBox x:Name="txtBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="45" InputMethod.IsInputMethodEnabled="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtBox2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="45" Margin="47,0,0,0" InputMethod.IsInputMethodEnabled="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cmbBox" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="45" Margin="94,0,0,0" IsEditable="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    </Grid>
+</UserControl>
